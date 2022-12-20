@@ -13,6 +13,6 @@ export class AutenticacaoService {
     return this.httpClient.post('http://localhost:3000/user/login',{
       userName: usuario,
       password: senha,
-    })
+    });
   }
 }
