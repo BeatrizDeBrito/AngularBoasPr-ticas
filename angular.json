@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "gatitobook": {
+    "alurapic": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/gatitobook",
+            "outputPath": "dist/alurapic",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -26,8 +26,7 @@
             ],
             "styles": [
               "src/styles.css",
-              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "./node_modules/font-awesome/css/font-awesome.css"
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": []
           },
@@ -62,10 +61,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "gatitobook:build:production"
+              "browserTarget": "alurapic:build:production"
             },
             "development": {
-              "browserTarget": "gatitobook:build:development"
+              "browserTarget": "alurapic:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -73,7 +72,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "gatitobook:build"
+            "browserTarget": "alurapic:build"
           }
         },
         "test": {
@@ -96,8 +95,5 @@
         }
       }
     }
-  },
-  "cli": {
-    "analytics": "a5a482e3-5c4a-4277-8236-a61e2e3ef369"
   }
 }
