@@ -1,1 +1,18 @@
-<app-photo></app-photo>
+<div class="main"> <!--tag main especifica o contaúdo principal-->
+  <h1>Lista de tarefas</h1>
+  <h2>Suas tarefas:</h2>
+
+  <ul>
+    <li *ngFor="let item of items">{{item.description}}</li>
+  </ul>
+  <label for="addItemInput">Digite sua tarefa de hoje!</label>
+
+<input
+  #newItem
+  placeholder="adicione um item"
+  class="lg-text-input"
+  id="addItemInput" />
+
+<button class="btn-primary" (click)="addItem(newItem.value)">Adicionar</button>
+
+</div>
